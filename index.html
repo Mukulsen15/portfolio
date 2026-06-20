@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteForge Web Solution</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="icon" type="image/png" href="logo-bf.png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">ByteForge</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-left">
+
+            <h1>
+                WE BUILD <br>
+                <span>WEBSITES</span><br>
+                THAT BUILD YOUR<br>
+                <strong>BUSINESS</strong>
+            </h1>
+
+            <div class="hero-buttons">
+
+                <!-- <a href="#contact" class="btn-primary">
+                    Get Free Quote
+                </a> -->
+
+                <a href="portfolio.html" class="btn-secondary">
+                    View Portfolio
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="feature-card">
+                Custom Website Designs
+            </div>
+
+            <div class="feature-card">
+                SEO Ready Websites
+            </div>
+
+            <div class="feature-card">
+                Mobile Optimization
+            </div>
+
+            <div class="feature-card">
+                E-Commerce Solutions
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Laptop Mockup -->
+    <div class="laptop-container">
+        <img src="ChatGPT_Image_Jun_6__2026__12_45_48_PM-removebg-preview.png" alt="">
+    </div>
+    <div class="com">
+        <h1>www.mukul.com</h1>
+    </div>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20ByteForge%20Team,%20I%20need%20a%20website." class="whatsapp"
+        target="_blank">
+        💬
+    </a>
+
+
+
+
+    <section id="services" class="services">
+
+        <h2>Our Services</h2>
+        <p>Professional web solutions for your business growth.</p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>Website Design</h3>
+                <p>Modern and responsive website designs for businesses.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>E-Commerce Store</h3>
+                <p>Build powerful online stores with secure payment integration.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Landing Pages</h3>
+                <p>High-converting landing pages for marketing campaigns.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Improve your website visibility and search rankings.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section-2 -->
+
+    <section id="pricing" class="pricing">
+
+        <h2>Pricing Plans</h2>
+        <p>Choose the package that fits your business needs.</p>
+
+        <div class="pricing-container">
+
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <div class="price">₹4,999</div>
+
+                <ul>
+                    <li>1 Page Website</li>
+                    <li>Responsive Design</li>
+                    <li>Contact Form</li>
+                    <li>3 Days Delivery</li>
+                </ul>
+
+                <button class="plan-btn">Choose Plan</button>
+            </div>
+
+            <div class="pricing-card popular">
+                <span class="badge">Popular</span>
+
+                <h3>Standard</h3>
+                <div class="price">₹9,999</div>
+
+                <ul>
+                    <li>5 Page Website</li>
+                    <li>Responsive Design</li>
+                    <li>Basic SEO</li>
+                    <li>5 Days Delivery</li>
+                </ul>
+
+                <button class="plan-btn">Choose Plan</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <div class="price">₹19,999</div>
+
+                <ul>
+                    <li>10+ Pages Website</li>
+                    <li>Advanced Design</li>
+                    <li>SEO Optimization</li>
+                    <li>Priority Support</li>
+                </ul>
+
+                <button class="plan-btn">Choose Plan</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+
+            <span class="close-btn">&times;</span>
+
+            <h2>Project Inquiry Form</h2>
+
+            <form id="quoteForm">
+
+                <input type="text" id="clientName" placeholder="Full Name" required>
+
+                <input type="email" id="clientEmail" placeholder="Email Address" required>
+
+                <input type="tel" id="clientPhone" placeholder="Phone Number" required>
+
+                <input type="text" id="selectedPlan" readonly>
+
+                <textarea id="projectDetails" placeholder="Tell us about your project..." rows="5" required>
+</textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- contect section -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+        <p>Let's discuss your next project.</p>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+
+                <p>📧 byteforge@gmail.com</p>
+                <!-- <p>📱 +91 9876543210</p> -->
+                <p>📍 Rajasthan, India</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <textarea id="message" rows="6" placeholder="Your Message" required>
+            </textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h2>ByteForge</h2>
+            <p>
+                We create modern, responsive and high-performing websites
+                that help businesses grow online.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+
+            <p>📧 byteforge@gmail.com</p>
+            <p>📱 +91 9876543210</p>
+            <p>📍 Rajasthan, India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 ByteForge Web Solutions. All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

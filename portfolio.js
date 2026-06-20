@@ -1,0 +1,13 @@
+const cards = document.querySelectorAll(".portfolio-card");
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+        card.style.transform = "translateY(-10px)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "translateY(0)";
+    });
+
+});
